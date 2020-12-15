@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         'light-blue': colors.lightBlue,
         cyan: colors.cyan,
+        'white-custom': '#F9F9F9',
       },
       boxShadow: {
         'navbar': "0 4px 4px rgba(0, 0, 0, 0.4)",

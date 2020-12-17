@@ -6,7 +6,7 @@ function Header () {
     const [isExpanded, toggleExpansion] = useState(false)
   
     return (
-      <nav className="fixed min-w-full flex items-center justify-between flex-wrap bg-white-custom p-6 shadow-sm">
+      <nav className="md:fixed min-w-full flex items-center justify-between flex-wrap bg-white-custom p-6 shadow-sm">
         <div className="flex items-center flex-shrink-0 text-white mr-6">
             {/* <div class= "rounded-full h-10 w-10 flex items-center justify-center border-2 border-light-blue-300 border-opacity-100">    
                 <img src="/images/logo.svg" alt="logo" class="object-cover h-15"/>

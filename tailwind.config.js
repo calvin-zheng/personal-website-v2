@@ -16,7 +16,10 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      ringColor: ['hover'],
+      ringOffsetColor: ['hover'],
+    },
   },
   plugins: [],
 }

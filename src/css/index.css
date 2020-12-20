@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import '~pattern.css/dist/pattern.css';
 
 body {
     background-color: #F9F9F9;

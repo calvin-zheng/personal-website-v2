@@ -6,5 +6,13 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [`gatsby-plugin-postcss`,],
+  plugins: [
+  {
+    resolve: `gatsby-plugin-styled-components`,
+    options: {
+      // Add any options here
+    },
+  },
+  `gatsby-plugin-postcss`, 
+  `gatsby-plugin-sass`,],
 }

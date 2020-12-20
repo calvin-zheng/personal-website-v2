@@ -1,4 +1,6 @@
-import "./src/css/index.css"
+require("./src/css/index.css");
+require("./src/css/index.scss");
+// import "./src/css/index.scss";
 
 // const React = require("react")
 // const Layout = require("./src/components/layout")

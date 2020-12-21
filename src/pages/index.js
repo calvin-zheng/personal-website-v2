@@ -2,6 +2,7 @@ import React from "react"
 import Navbar from '../components/navbar'
 import Greeting from '../components/greeting'
 import About from '../components/about'
+import Experience from '../components/experience'
 
 class Home extends React.Component {
   render() {
@@ -13,6 +14,9 @@ class Home extends React.Component {
         </div>
         <div className="about">
           <About />
+        </div>
+        <div className="experience">
+          <Experience />
         </div>
       </div>
     )

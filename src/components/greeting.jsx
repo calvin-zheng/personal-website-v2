@@ -5,7 +5,7 @@ import {Linkedin, GitHub, Mail} from "react-feather";
 function Greeting () {
 
     function calculateSize(){
-        if (typeof window !== undefined) {
+        if (typeof window !== `undefined`) {
             if (window.screen.width <= 400){
                 return 20;
             }

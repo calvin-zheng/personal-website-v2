@@ -64,13 +64,13 @@ function Experience () {
                     <div className="min-w-full mx-auto flex flex-col sm:flex-row">
                         <div className="w-full sm:w-1/4 text-xs sm:text-sm">
                             <div className="overflow-x-auto sm:w-3/4 flex flex-row sm:flex-col">
-                                <button onClick={() => setSelected('CapitalOne')} className ={`${ isSelected('CapitalOne') ? `bg-cyan-100 bg-opacity-30 underline border-opacity-100 text-cyan-600`: `bg-none border-opacity-10 text-gray-400` } w-full text-left border-b sm:border-b-0 sm:border-l border-cyan-600 p-2`}>
+                                <button onClick={() => setSelected('CapitalOne')} className ={`${ isSelected('CapitalOne') ? `bg-cyan-100 bg-opacity-30 underline border-opacity-100 text-cyan-600`: `bg-none border-opacity-10 text-gray-400` } focus:outline-none w-full text-left border-b sm:border-b-0 sm:border-l border-cyan-600 p-2`}>
                                     Capital One
                                 </button>
-                                <button onClick={() => setSelected('Toyota')} className ={`${ isSelected('Toyota') ? `bg-cyan-100 bg-opacity-30 underline border-opacity-100 text-cyan-600`: `bg-none border-opacity-10 text-gray-400` } w-full text-left border-b sm:border-b-0 sm:border-l border-cyan-600 p-2`}>
+                                <button onClick={() => setSelected('Toyota')} className ={`${ isSelected('Toyota') ? `bg-cyan-100 bg-opacity-30 underline border-opacity-100 text-cyan-600`: `bg-none border-opacity-10 text-gray-400` } focus:outline-none w-full text-left border-b sm:border-b-0 sm:border-l border-cyan-600 p-2`}>
                                     Toyota North America
                                 </button>
-                                <button onClick={() => setSelected('UM')} className ={`${ isSelected('UM') ? `bg-cyan-100 bg-opacity-30 underline border-opacity-100 text-cyan-600`: `bg-none border-opacity-10 text-gray-400` } w-full text-left border-b sm:border-b-0 sm:border-l border-cyan-600 p-2`}>
+                                <button onClick={() => setSelected('UM')} className ={`${ isSelected('UM') ? `bg-cyan-100 bg-opacity-30 underline border-opacity-100 text-cyan-600`: `bg-none border-opacity-10 text-gray-400` } focus:outline-none w-full text-left border-b sm:border-b-0 sm:border-l border-cyan-600 p-2`}>
                                     University of Michigan
                                 </button>
                             </div>

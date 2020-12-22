@@ -29,6 +29,9 @@ function Header () {
               Projects
             </Link>
             <Link to="#" className="block mt-4 md:inline-block md:mt-0 text-gray-500 hover:text-cyan-500 md:mr-4">
+              Activities
+            </Link>
+            <Link to="#" className="block mt-4 md:inline-block md:mt-0 text-gray-500 hover:text-cyan-500 md:mr-4">
               Contact
             </Link>
             <a href="#download" className="inline-block px-4 py-2 leading-none border rounded text-gray-500 border-gray-500 hover:border-cyan-500 hover:text-cyan-500 mt-4 md:mt-0">Resume</a>

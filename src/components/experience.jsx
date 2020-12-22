@@ -14,7 +14,7 @@ function Bulleted (text) {
 function Location (text) {
     return (
         <div className="flex flex-row items-start space-x-2">
-            <MapPin className="text-cyan-500 flex-shrink-0" size={15} />
+            <MapPin className="relative top-0.5 text-cyan-500 flex-shrink-0" size={15} />
             <p className="text-xs sm:text-sm md:text-base">{text}</p>
         </div>
     )
@@ -23,7 +23,7 @@ function Location (text) {
 function Date (text) {
     return (
         <div className="flex flex-row items-start space-x-2">
-            <Calendar className="text-cyan-500 flex-shrink-0" size={15} />
+            <Calendar className="relative top-0.5 text-cyan-500 flex-shrink-0" size={15} />
             <p className="text-xs sm:text-sm md:text-base">{text}</p>
         </div>
     )
@@ -85,7 +85,6 @@ function Experience () {
                         </div>
                     </div>
                 </div>
-                
             </div>
             
         </div>

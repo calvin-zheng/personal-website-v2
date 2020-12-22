@@ -31,7 +31,9 @@ function About () {
     const data = useStaticQuery(query)
   
     return (
-        <div className="min-h-screen px-10 flex flex-col sm:py-12 w-full md:w-3/4 max-w-5xl mx-auto justify-center divide-y divide-cyan-500">
+        <div>
+            <div id="about" className="w-full h-5"></div>
+        <div id="about" className="min-h-screen px-10 flex flex-col sm:py-12 w-full md:w-3/4 max-w-5xl mx-auto justify-center divide-y divide-cyan-500">
             <h1 className="text-xl sm:text-2xl md:text-3xl text-cyan-600 font-semibold py-0.5">About Me</h1>
             <div className="min-w-full flex flex-col space-y-10 lg:flex-row md:space-x-10 items-center py-5">
                 <div className="lg:w-1/2 px-4 py-10 bg-white rounded-3xl sm:p-10 ring-2 ring-opacity-30 ring-cyan-500 border-black border-opacity-20 shadow">
@@ -75,6 +77,8 @@ function About () {
             </div>
             
         </div>
+        </div>
+        
     )
   }
 

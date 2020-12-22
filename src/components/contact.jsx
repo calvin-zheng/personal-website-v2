@@ -1,5 +1,4 @@
 import React from "react"
-import {Box, MapPin, Calendar} from 'react-feather';
 
 
 function Contact () {
@@ -70,9 +69,9 @@ function Contact () {
     //     </div>
     // )
     return (
-        <div className="min-h-screen px-10 flex flex-col sm:py-12 w-full md:w-3/4 max-w-5xl mx-auto justify-center items-center">
-            <h1 className="w-full text-4xl text-cyan-600 font-semibold py-0.5 text-center">Get In Touch</h1>
-            <p className="w-1/2 text-lg text-center mb-5">Although I have already found a summer internship for Summer 2021, I'm always free to chat. Feel free to contact me!</p>
+        <div id="contact" className="min-h-screen px-10 flex flex-col sm:py-12 w-full md:w-3/4 max-w-5xl mx-auto justify-center items-center">
+            <h1 className="w-full text-2xl sm:text-3xl md:text-4xl text-cyan-600 font-semibold text-center">Get In Touch</h1>
+            <p className="w-1/2 text-sm sm:text-base md:text-lg text-center mb-5">Although I have already found a summer internship for Summer 2021, I'm always free to chat. Feel free to contact me!</p>
             <a className="inline-block px-4 py-2 leading-none border rounded text-cyan-600 border-cyan-600 hover:border-cyan-500 hover:text-cyan-500 mt-4 md:mt-0" href="mailto:calzheng@umich.edu">Contact Me</a>
         </div>
     )

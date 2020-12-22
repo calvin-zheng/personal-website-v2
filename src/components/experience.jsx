@@ -30,9 +30,6 @@ function Date (text) {
 }
 
 function WorkInfo (jobTitle, company, location, datesWorked, bullets) {
-    const bulletList = bullets.map((bullet) => 
-        {Bulleted(bullet)}
-    );
     return (
         <div className="w-full flex flex-col space-y-2 my-2">
             <div>
@@ -60,7 +57,7 @@ function Experience () {
     }
   
     return (
-        <div className="min-h-screen px-10 flex flex-col sm:py-12 w-full md:w-3/4 max-w-5xl mx-auto justify-center divide-y divide-cyan-500">
+        <div id="experience" className="min-h-screen px-10 flex flex-col sm:py-12 w-full md:w-3/4 max-w-5xl mx-auto justify-center divide-y divide-cyan-500">
             <h1 className="text-xl sm:text-2xl md:text-3xl text-cyan-600 font-semibold py-0.5">Work Experience</h1>
             <div className="min-w-full flex flex-col space-y-10 lg:flex-row md:space-x-10 items-center py-5">
                 <div className="mx-auto w-full bg-white rounded-xl p-3 ring-2 ring-opacity-10 ring-cyan-500 border-black border-opacity-20 shadow">

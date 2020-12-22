@@ -1,5 +1,5 @@
 import React from "react";
-import {Box, MapPin, Calendar} from 'react-feather';
+import {Box} from 'react-feather';
 import {graphql, useStaticQuery} from 'gatsby';
 import Img from 'gatsby-image';
 import toyotaGIF from '../images/toyota-prcc.gif';
@@ -93,7 +93,9 @@ function Projects () {
     const data = useStaticQuery(query)
   
     return (
-        <div className="min-h-screen px-10 flex flex-col sm:py-12 w-full md:w-3/4 max-w-5xl mx-auto justify-center divide-y divide-cyan-500">
+        <div> 
+            <div id="projects" className="w-full h-10"></div>
+            <div className="min-h-screen px-10 flex flex-col sm:py-12 w-full md:w-3/4 max-w-5xl mx-auto divide-y divide-cyan-500">
             <h1 className="text-xl sm:text-2xl md:text-3xl text-cyan-600 font-semibold py-0.5">Projects</h1>
             <div className="min-w-full flex flex-col space-y-10 md:space-x-10 items-center py-5">
                 {Project('Toyota - Optimizing for a Digital Future', ["Learned Angular, Spring, and MySQL to create a responsive web application to optimize the supply chain process by 35%", "Conducted user interviews with engineers to determine painpoints that needed to be addressed by the application"], false, true, toyotaGIF)}
@@ -109,6 +111,8 @@ function Projects () {
             </div>
             
         </div>
+        </div>
+        
     )
   }
 

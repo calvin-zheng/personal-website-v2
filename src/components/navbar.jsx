@@ -1,5 +1,5 @@
 import React, {useState} from "react"
-import { Link } from "gatsby"
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 function Header () {
 
@@ -19,21 +19,21 @@ function Header () {
         </div>
         <div className={`${ isExpanded ? `block` : `hidden` } w-full block flex-grow md:flex md:items-center md:w-auto`}>
           <div className="ml-auto text-center">
-            <Link to="#" href="#responsive-header" className="block mt-4 md:inline-block md:mt-0 text-gray-500 hover:text-cyan-500 md:mr-4">
+            <button onClick={() => scrollTo('#about')} className="w-full md:w-auto block mt-4 md:inline-block md:mt-0 text-gray-500 hover:text-cyan-500 md:mr-4">
               About
-            </Link>
-            <Link to="#" className="block mt-4 md:inline-block md:mt-0 text-gray-500 hover:text-cyan-500 md:mr-4">
+            </button>
+            <button onClick={() => scrollTo('#experience')} className="w-full md:w-auto block mt-4 md:inline-block md:mt-0 text-gray-500 hover:text-cyan-500 md:mr-4">
               Experience
-            </Link>
-            <Link to="#" className="block mt-4 md:inline-block md:mt-0 text-gray-500 hover:text-cyan-500 md:mr-4">
+            </button>
+            <button onClick={() => scrollTo('#projects')} className="w-full md:w-auto block mt-4 md:inline-block md:mt-0 text-gray-500 hover:text-cyan-500 md:mr-4">
               Projects
-            </Link>
-            <Link to="#" className="block mt-4 md:inline-block md:mt-0 text-gray-500 hover:text-cyan-500 md:mr-4">
+            </button>
+            <button onClick={() => scrollTo('#activities')} className="w-full md:w-auto block mt-4 md:inline-block md:mt-0 text-gray-500 hover:text-cyan-500 md:mr-4">
               Activities
-            </Link>
-            <Link to="#" className="block mt-4 md:inline-block md:mt-0 text-gray-500 hover:text-cyan-500 md:mr-4">
+            </button>
+            <button onClick={() => scrollTo('#contact')} className="w-full md:w-auto block mt-4 md:inline-block md:mt-0 text-gray-500 hover:text-cyan-500 md:mr-4">
               Contact
-            </Link>
+            </button>
             <a href="#download" className="inline-block px-4 py-2 leading-none border rounded text-gray-500 border-gray-500 hover:border-cyan-500 hover:text-cyan-500 mt-4 md:mt-0">Resume</a>
           </div>
         </div>

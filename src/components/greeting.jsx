@@ -17,7 +17,7 @@ function Greeting () {
     }
 
     return (
-        <Fade delay={500} duration={3000}>
+        <Fade ssrFade delay={500} duration={3000}>
             <div className="min-h-screen px-10 flex flex-col sm:py-12 w-full md:w-3/4 max-w-5xl mx-auto justify-center">
             <div className="pattern-dots-md rounded-3xl text-cyan-500"> 
                 <div className="transform translate-x-3 -translate-y-3 md:translate-x-5 md:-translate-y-5 relative px-4 py-5 lg:p-20 bg-white rounded-3xl sm:p-20 ring-2 ring-opacity-30 ring-cyan-500 border-2 border-black border-opacity-5">

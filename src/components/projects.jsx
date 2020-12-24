@@ -3,6 +3,7 @@ import {Box} from 'react-feather';
 import {graphql, useStaticQuery} from 'gatsby';
 import Img from 'gatsby-image';
 import toyotaGIF from '../images/toyota-prcc.gif';
+import { Fade, Slide } from "react-reveal";
 
 
 
@@ -53,7 +54,8 @@ function Project (projectName, bullets, flipped, isGIF, gif) {
 
 function ProjectInfo (projectName, bullets) {
     return (
-        <div className="w-full flex flex-col space-y-2 my-2 ">
+        <Fade duration={500}>
+            <div className="w-full flex flex-col space-y-2 my-2 ">
             <div>
                 <h1 className="text-sm sm:text-base">
                     <span className="text-sm sm:text-base">{projectName} </span>
@@ -63,7 +65,8 @@ function ProjectInfo (projectName, bullets) {
                 {bullets.map((bullet)=> Bulleted(bullet))}
             </div>
             
-        </div>
+            </div>
+        </Fade>
     )
 }
 
@@ -93,25 +96,34 @@ function Projects () {
     const data = useStaticQuery(query)
   
     return (
-        <div> 
+        <Fade delay={200} duration={1000}> 
             <div id="projects" className="w-full h-10"></div>
             <div className="min-h-screen px-10 flex flex-col sm:py-12 w-full md:w-3/4 max-w-5xl mx-auto divide-y divide-cyan-500">
-            <h1 className="text-xl sm:text-2xl md:text-3xl text-cyan-600 font-semibold py-0.5">Projects</h1>
-            <div className="min-w-full flex flex-col space-y-10 md:space-x-10 items-center py-5">
-                {Project('Toyota - Optimizing for a Digital Future', ["Learned Angular, Spring, and MySQL to create a responsive web application to optimize the supply chain process by 35%", "Conducted user interviews with engineers to determine painpoints that needed to be addressed by the application"], false, true, toyotaGIF)}
-                <br></br>
-                <a href="https://github.com/sidpagariya/zconnect" className="w-full">
-                    {Project('ZConnect - HackMIT', ["Utilized Python, Flask, and Selenium to create a Zoom chatbot that allows instructors to gauge student engagement and create polls while also giving students the ability to ask anonymous questions and check Piazza"], true, false, data.zconnect.childImageSharp.fluid)}
-                </a>
-                <br></br>
-                <a href="https://github.com/calvin-zheng/to-do-app" className="w-full">
-                    {Project("What's Next", ["Designed and created a more personalized to-do list web app that keeps track of user data using Firebase and ReactJS"], false, false, data.todo.childImageSharp.fluid)}
-                </a>
-                
-            </div>
+                <h1 className="text-xl sm:text-2xl md:text-3xl text-cyan-600 font-semibold py-0.5">Projects</h1>
+                <div className="min-w-full flex flex-col space-y-10 md:space-x-10 items-center py-5">
+                    <Slide bottom delay={300} duration={1000}>
+                        <div>
+                            {Project('Toyota - Optimizing for a Digital Future', ["Learned Angular, Spring, and MySQL to create a responsive web application to optimize the supply chain process by 35%", "Conducted user interviews with engineers to determine painpoints that needed to be addressed by the application"], false, true, toyotaGIF)}
+                        </div>
+                    </Slide>
+                    <br></br>
+                    <Slide bottom delay={300} duration={1000}>
+                        <a href="https://github.com/sidpagariya/zconnect" className="w-full">
+                            {Project('ZConnect - HackMIT', ["Utilized Python, Flask, and Selenium to create a Zoom chatbot that allows instructors to gauge student engagement and create polls while also giving students the ability to ask anonymous questions and check Piazza"], true, false, data.zconnect.childImageSharp.fluid)}
+                        </a>
+                    </Slide>
+                    <br></br>
+                    <Slide bottom delay={300} duration={1000}>
+                        <a href="https://github.com/calvin-zheng/to-do-app" className="w-full">
+                            {Project("What's Next", ["Designed and created a more personalized to-do list web app that keeps track of user data using Firebase and ReactJS"], false, false, data.todo.childImageSharp.fluid)}
+                        </a>
+                    </Slide>
+                    
+                    
+                </div>
             
-        </div>
-        </div>
+            </div>
+        </Fade>
         
     )
   }

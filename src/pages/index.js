@@ -6,11 +6,13 @@ import Experience from '../components/experience'
 import Projects from '../components/projects'
 import Activities from '../components/activities'
 import Contact from '../components/contact'
+import SEO from '../components/seo'
 
 class Home extends React.Component {
   render() {
     return (
       <div className="content"> 
+        <SEO />
         <Navbar />
         <div className="greeting">
           <Greeting />

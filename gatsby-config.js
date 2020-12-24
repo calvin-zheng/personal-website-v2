@@ -16,7 +16,8 @@ module.exports = {
     twitterUsername: "@zheng_calvin",
   },
   plugins: [
-    'gatsby-v2-plugin-page-transitions',
+    `gatsby-plugin-react-helmet`,
+    `gatsby-v2-plugin-page-transitions`,
     {
       resolve: `gatsby-plugin-scroll-reveal`,
       options: {

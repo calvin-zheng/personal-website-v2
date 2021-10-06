@@ -59,7 +59,7 @@ function Activities () {
                 <div className="w-full flex flex-col lg:grid lg:grid-cols-3 lg:space-x-5 space-y-5 lg:space-y-0">
                     <Slide bottom duration={1000}>
                         <a className="w-7/8 bg-white rounded-xl p-3 border-black border-opacity-20 shadow" href="https://mpowered.umich.edu/">
-                                {Activity("VP Strategy", "MPowered Entrepreneurship", "September 2018 - Present", ["Coordinate event and planning logistics within MPowered's 5 event groups (Startup Career Fair, Makeathon, 1000 Pitches, Consulting, Trailblaze)"])}
+                                {Activity("Chief Operating Officer", "MPowered Entrepreneurship", "September 2018 - Present", ["Coordinate event and planning logistics within MPowered's 5 event groups (Startup Career Fair, Makeathon, 1000 Pitches, Consulting, Trailblaze)"])}
                         </a>
                     </Slide>
                     <Slide bottom duration={1000}>

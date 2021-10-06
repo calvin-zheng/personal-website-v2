@@ -36,7 +36,7 @@ function Greeting () {
                                 
                             </Slide>
                             <Slide bottom delay={700} duration={3000}>
-                            <p className="text-gray-500 text-xs sm:text-sm md:text-lg w-full">I’m a computer science junior at the University of Michigan in Ann Arbor, MI, interested in software engineering, web development, machine learning, and natural language processing.</p>
+                            <p className="text-gray-500 text-xs sm:text-sm md:text-lg w-full">I’m a computer science senior at the University of Michigan in Ann Arbor, MI, interested in software engineering, web development, machine learning, and natural language processing.</p>
                             </Slide>
                             
                             

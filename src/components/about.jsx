@@ -40,15 +40,15 @@ function About () {
                     <div className="lg:w-1/2 px-4 py-10 bg-white rounded-3xl sm:p-10 ring-2 ring-opacity-30 ring-cyan-500 border-black border-opacity-20 shadow">
                         <div className="min-w-full mx-auto space-y-6">
                             <div>
-                                <p className="text-gray-500 text-xs sm:text-sm md:text-base lg:text-lg w-full">Hello! I’m Calvin, a junior at the <a className="text-cyan-600 hover:text-cyan-500" href="https://umich.edu/"><nobr>University of Michigan</nobr></a> majoring in Computer Science with a minor in Business.</p>
+                                <p className="text-gray-500 text-xs sm:text-sm md:text-base lg:text-lg w-full">Hello! I’m Calvin, a senior at the <a className="text-cyan-600 hover:text-cyan-500" href="https://umich.edu/"><nobr>University of Michigan</nobr></a> majoring in Computer Science with a minor in Business.</p>
                                 <br></br>
                                 <p className="text-gray-500 text-xs sm:text-sm md:text-base lg:text-lg w-full">I am passionate about fullstack development and learning more about how software engineering can help improve other fields, such as finance.</p>
                                 <br></br>
-                                <p className="text-gray-500 text-xs sm:text-sm md:text-base lg:text-lg w-full">I've previously interned with <a className="text-cyan-600 hover:text-cyan-500" href="https://www.toyota.com/usa/"><nobr>Toyota North America</nobr></a> and will be interning with <a className="text-cyan-600 hover:text-cyan-500" href="https://www.toyota.com/usa/"><nobr>Capital One</nobr></a> this upcoming summer!</p>
+                                <p className="text-gray-500 text-xs sm:text-sm md:text-base lg:text-lg w-full">I've previously interned with <a className="text-cyan-600 hover:text-cyan-500" href="https://www.toyota.com/usa/"><nobr>Capital One</nobr></a> and <a className="text-cyan-600 hover:text-cyan-500" href="https://www.toyota.com/usa/"><nobr>Toyota North America</nobr></a></p>
                                 <br></br>
                                 <p className="text-gray-500 text-xs sm:text-sm md:text-base lg:text-lg w-full">Recently, I've used the following technologies:</p>
                                 <br></br>
-                                <div className="mx-auto w-3/4 grid grid-none sm:grid-cols-2 text-gray-500 text-xs sm:text-sm md:text-base lg:text-lg">
+                                <div className="mx-auto w-4/5 grid grid-none sm:grid-cols-2 text-gray-500 text-xs sm:text-sm md:text-base lg:text-lg">
                                     {Bulleted('ReactJS')}
                                     {Bulleted('Angular')}
                                     {Bulleted('HTML')}
@@ -60,6 +60,11 @@ function About () {
                                     {Bulleted('Spring')}
                                     {Bulleted('MySQL')}
                                     {Bulleted('Gatsby')}
+                                    {Bulleted('Apache Airflow')}
+                                    {Bulleted('AWS S3')}
+                                    {Bulleted('AWS Lambda')}
+                                    {Bulleted('AWS EC2')}
+                                    {Bulleted('AWS EMR')}
                                 </div>
                             </div>
                         </div>

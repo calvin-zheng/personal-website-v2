@@ -16,24 +16,6 @@ function Bulleted (text) {
     )
 }
 
-// function Location (text) {
-//     return (
-//         <div className="flex flex-row items-start space-x-2">
-//             <MapPin className="relative top-0.5 text-cyan-500 flex-shrink-0" size={15} />
-//             <p className="text-xs sm:text-sm md:text-base">{text}</p>
-//         </div>
-//     )
-// }
-
-// function Date (text) {
-//     return (
-//         <div className="flex flex-row items-start space-x-2">
-//             <Calendar className="relative top-0.5 text-cyan-500 flex-shrink-0" size={15} />
-//             <p className="text-xs sm:text-sm md:text-base">{text}</p>
-//         </div>
-//     )
-// }
-
 function Project (projectName, bullets, flipped, isGIF, gif) {
     return (
         <div className={`transform flex flex-col lg:flex-row bg-gradient-to-b lg:bg-gradient-to-r from-cyan-50 to-cyan-500 ${ flipped ? `rotate-3 lg:flex-row-reverse` : `-rotate-3 lg:from-cyan-500 lg:to-cyan-50`} rounded-lg mx-auto w-full items-center mt-8 space-x-5 space-y-5 shadow`}>
@@ -75,21 +57,29 @@ function Projects () {
     const query = graphql`
     query Query {
         zconnect: file(relativePath: { eq: "zconnect.jpg" }) {
-        childImageSharp {
-            # Specify the image processing specifications right in the query.
-            fluid {
-            ...GatsbyImageSharpFluid
-            }
-        }
-        }
-        todo: file(relativePath: { eq: "whatsnext.png" }) {
             childImageSharp {
                 # Specify the image processing specifications right in the query.
                 fluid {
                 ...GatsbyImageSharpFluid
-                }
             }
+        }
+        }
+        todo: file(relativePath: { eq: "pomoductivity.png" }) {
+            childImageSharp {
+                # Specify the image processing specifications right in the query.
+                fluid {
+                ...GatsbyImageSharpFluid
             }
+        }
+        }
+        ballerstats: file(relativePath: { eq: "BallerStats.png" }) {
+            childImageSharp {
+                # Specify the image processing specifications right in the query.
+                fluid {
+                ...GatsbyImageSharpFluid
+            }
+        }
+        }
     }
     `
     
@@ -114,11 +104,15 @@ function Projects () {
                     </Slide>
                     <br></br>
                     <Slide bottom delay={300} duration={1000}>
-                        <a href="https://github.com/calvin-zheng/to-do-app" className="w-full">
-                            {Project("What's Next", ["Designed and created a more personalized to-do list web app that keeps track of user data using Firebase and ReactJS"], false, false, data.todo.childImageSharp.fluid)}
+                        <a href="https://github.com/calvin-zheng/pomoductivity" className="w-full">
+                            {Project("Pomoductivity", ["Designed and created a more pomodoro and kanban web app that keeps track of user data using Firebase and ReactJS"], false, false, data.todo.childImageSharp.fluid)}
                         </a>
                     </Slide>
-                    
+                    <Slide bottom delay={300} duration={1000}>
+                        <a href="https://web.eecs.umich.edu/~justincj/teaching/eecs442/projects/WI2021/pdfs/005.pdf" className="w-full">
+                            {Project("BallerStats", ["Video-based distance estimation tracker written in Python 3 and utilized computer vision techniques, such as camera calibration, object tracking, image transformations, and depth estimation with deep learning"], true, false, data.ballerstats.childImageSharp.fluid)}
+                        </a>
+                    </Slide>
                     
                 </div>
             

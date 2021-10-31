@@ -10,7 +10,7 @@ function Contact () {
                 <h1 className="w-full text-2xl sm:text-3xl md:text-4xl text-cyan-600 font-semibold text-center">Get In Touch</h1>
             </Fade>
             <Fade delay={200} duration={500}>
-                <p className="w-1/2 text-sm sm:text-base md:text-lg text-center mb-5">I'm currently looking for a fulltime position starting the summer of 2022. Feel free to contact me!</p>
+                <p className="w-1/2 text-sm sm:text-base md:text-lg text-center mb-5">I'm not currently looking for new opportunities, but feel free to reach out with any questions or to say hi!</p>
             </Fade>
             <Fade delay={500} duration={500}>
                 <a className="inline-block px-4 py-2 leading-none border rounded text-cyan-600 border-cyan-600 hover:border-cyan-500 hover:text-cyan-500 mt-4 md:mt-0" href="mailto:calzheng@umich.edu">Contact Me</a>

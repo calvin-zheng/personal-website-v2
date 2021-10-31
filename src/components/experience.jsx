@@ -54,7 +54,7 @@ function WorkInfo (jobTitle, company, location, datesWorked, bullets) {
 
 function Experience () {
 
-    const [selected, setSelected] = useState('CapitalOne');
+    const [selected, setSelected] = useState('Bloomberg');
 
     function isSelected(text) {
         return (selected !== text) ? false : true;
@@ -69,6 +69,9 @@ function Experience () {
                     <div className="min-w-full mx-auto flex flex-col sm:flex-row">
                         <div className="w-full sm:w-1/4 text-xs sm:text-sm">
                             <div className="overflow-x-auto sm:w-3/4 flex flex-row sm:flex-col">
+                                <button onClick={() => setSelected('Bloomberg')} className ={`transition-colors duration-500 ease-in-out ${ isSelected('Bloomberg') ? `bg-cyan-100 bg-opacity-30 underline border-opacity-100 text-cyan-600`: `bg-none border-opacity-10 text-gray-400` } focus:outline-none w-full text-left border-b sm:border-b-0 sm:border-l border-cyan-600 p-2`}>
+                                    Bloomberg
+                                </button>
                                 <button onClick={() => setSelected('CapitalOne')} className ={`transition-colors duration-500 ease-in-out ${ isSelected('CapitalOne') ? `bg-cyan-100 bg-opacity-30 underline border-opacity-100 text-cyan-600`: `bg-none border-opacity-10 text-gray-400` } focus:outline-none w-full text-left border-b sm:border-b-0 sm:border-l border-cyan-600 p-2`}>
                                     Capital One
                                 </button>
@@ -82,6 +85,7 @@ function Experience () {
                         </div>
                         
                         <div className="w-full sm:w-3/4">
+                            {isSelected('Bloomberg') &&  WorkInfo('Incoming Software Engineer', 'Bloomberg LP', 'New York City, NY', 'August 2022', ['Excited to start my full-time career at Bloomberg to further explore my interests in financial technology!'])}
                             {isSelected('CapitalOne') && WorkInfo('Software Engineering Intern', 'Capital One', "New York City, NY", "June - August 2021", ['Created multiple on-demand machine learning data pipelines using AWS and an Apache Airflow DAG to reduce analyzation time of new vendor datasets from 2-3 months to within 2 weeks', 'Utilized AWS Lambda and S3 Triggers to instantly start the Airflow DAGs using the Airflow API once files are uploaded into AWS S3', 'Developed the first dynamic Airflow DAG on the team, using Airflow XCom to store job-specific variables, allowing for concurrent DAG runs on multiple datasets', 'Built a Slack app to send notifications to the data science teams and other users for monitoring the status of Airflow DAG runs'])}
                             {isSelected('Toyota') && WorkInfo('Engineering Co-op & Student Developer', 'Toyota North America', "Saline, MI", "June - August 2020", ['Developed full-stack using Spring, Angular, Material UI, MySQL and HTML5/CSS3 to replace an unstandardized Excel-based process with a responsive modern web application, optimizing overall efficiency by 35%', 'Established a strategy plan for the rollout of a global internal system, keeping track of key dates and KPIs', 'Built multiple automated PowerBI reports to track historic data trends, reducing time spent on compiling data snapshots by 50%'])}
                             {isSelected('UM') && WorkInfo('Teaching Assistant', 'University of Michigan', "Ann Arbor, MI", "September 2019 - Present", ['Lead sessions for 100+ students and weekly discussions of 40 students for a web systems class with 500+ enrolled students, covering topics including static/dynamic webpages, REST APIs, and MapReduce', 'Led sessions for 50 students and weekly discussions of 20+ students for an introductory programming class focused on software development for accessibility', 'Grade homework assignments and generate exam questions'])}
